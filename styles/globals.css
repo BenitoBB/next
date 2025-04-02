@@ -1,26 +1,46 @@
-html,
 body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
   padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.container {
+  max-width: 600px;
+  margin: 0 auto;
 }
 
-* {
-  box-sizing: border-box;
+.input-container {
+  display: flex;
+  margin-bottom: 20px;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+input {
+  flex: 1;
+  padding: 8px;
+  margin-right: 10px;
+}
+
+button {
+  padding: 8px 16px;
+  background: #0070f3;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task-list li {
+  padding: 8px;
+  margin: 5px 0;
+  background: #f4f4f4;
+  cursor: pointer;
+}
+
+.task-list li.completed {
+  text-decoration: line-through;
+  color: #888;
 }
